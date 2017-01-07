@@ -19,7 +19,7 @@ def booking(session, base_url,ID):
         "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
     }
     postData = {
-        'userId': 'xx',
+        'userId': '4106',
         'seatSectionId': ID,
         'r':'0.8172563019924376'
     }
@@ -45,25 +45,25 @@ def getinfo(url):
     return lists
 
 def mune(date):
-    url3east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8155444803447855&imageUrl=/images/seatResult/5e8f6722-07a4-43b6-bfea-05220e47f1be' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=43'
-    url3west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.08844843221934706&imageUrl=/images/seatResult/eb833dbb-8526-45f1-a739-4f7f7983cc41' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=44'
-    url4east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.1666412330077942&imageUrl=/images/seatResult/440c6978-95cc-4785-8900-db529f57d836' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=45'
-    url4west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9316103269779259&imageUrl=/images/seatResult/805eede7-535b-4029-87cd-8fb79a861b3e' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=46'
-    url5east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8034358995400162&imageUrl=/images/seatResult/3a283fe1-ae63-4c74-b451-5c9cace38f46' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=47'
-    url5mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.7633520922774231&imageUrl=/images/seatResult/71934688-351a-4660-977d-8a42e2563b07' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=48'
-    url5west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.5842258553794377&imageUrl=/images/seatResult/2051ee9b-61e5-4f76-9b15-322fba9995c5' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=49'
-    url6east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9023130104776556&imageUrl=/images/seatResult/120785ef-82d4-423a-91d8-ef886d1b1cda' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=50'
-    url6west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.2518309024951757&imageUrl=/images/seatResult/359178c5-3bdb-49de-8112-5374502df900' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=51'
-    url7east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.09738120287771856&imageUrl=/images/seatResult/f2ebd071-3195-4622-aaa9-5e3f3817f6c0' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=52'
-    url7west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.41158631476384966&imageUrl=/images/seatResult/35158d63-557f-421c-94a4-4a9f12159b07' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=53'
-    url8east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.4601234287444893&imageUrl=/images/seatResult/8d6d964a-75c7-486d-b6ae-9b2dce3927ab' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=54'
-    url8mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9046385651100175&imageUrl=/images/seatResult/9af655d1-647e-4777-a5d5-d10441d6dba5' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=55'
-    url8west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.7982274150140556&imageUrl=/images/seatResult/bf0201ad-8962-4c7e-94cf-08cdc1d3c5c4' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=56'
-    url9east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8878320187842057&imageUrl=/images/seatResult/839ead6a-e63b-4db9-bf12-ff5433201da4' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=57'
-    url9mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.6548179044318811&imageUrl=/images/seatResult/3744f2d6-2862-4abc-8af8-34a538f3128b' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=58'
-    url9west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.5664931577582566&imageUrl=/images/seatResult/50d65f3a-3c48-4e62-937f-580909a0e2f3' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=59'
+    url3east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8155444803447855&imageUrl=/images/seatResult/5e8f6722-07a4-43b6-bfea-05220e47f1be' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=62'
+    url3west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.08844843221934706&imageUrl=/images/seatResult/eb833dbb-8526-45f1-a739-4f7f7983cc41' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=63'
+    url4east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.1666412330077942&imageUrl=/images/seatResult/440c6978-95cc-4785-8900-db529f57d836' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=64'
+    url4west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9316103269779259&imageUrl=/images/seatResult/805eede7-535b-4029-87cd-8fb79a861b3e' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=65'
+    url5east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8034358995400162&imageUrl=/images/seatResult/3a283fe1-ae63-4c74-b451-5c9cace38f46' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=66'
+    url5mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.7633520922774231&imageUrl=/images/seatResult/71934688-351a-4660-977d-8a42e2563b07' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=67'
+    url5west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.5842258553794377&imageUrl=/images/seatResult/2051ee9b-61e5-4f76-9b15-322fba9995c5' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=68'
+    url6east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9023130104776556&imageUrl=/images/seatResult/120785ef-82d4-423a-91d8-ef886d1b1cda' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=69'
+    url6west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.2518309024951757&imageUrl=/images/seatResult/359178c5-3bdb-49de-8112-5374502df900' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=70'
+    url7east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.09738120287771856&imageUrl=/images/seatResult/f2ebd071-3195-4622-aaa9-5e3f3817f6c0' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=71'
+    url7west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.41158631476384966&imageUrl=/images/seatResult/35158d63-557f-421c-94a4-4a9f12159b07' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=72'
+    url8east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.4601234287444893&imageUrl=/images/seatResult/8d6d964a-75c7-486d-b6ae-9b2dce3927ab' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=73'
+    url8mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.9046385651100175&imageUrl=/images/seatResult/9af655d1-647e-4777-a5d5-d10441d6dba5' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=74'
+    url8west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.7982274150140556&imageUrl=/images/seatResult/bf0201ad-8962-4c7e-94cf-08cdc1d3c5c4' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=75'
+    url9east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.8878320187842057&imageUrl=/images/seatResult/839ead6a-e63b-4db9-bf12-ff5433201da4' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=76'
+    url9mid = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.6548179044318811&imageUrl=/images/seatResult/3744f2d6-2862-4abc-8af8-34a538f3128b' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=77'
+    url9west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.5664931577582566&imageUrl=/images/seatResult/50d65f3a-3c48-4e62-937f-580909a0e2f3' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=78'
     url10east = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.3710558413349221&imageUrl=/images/seatResult/82a5fa63-cc0b-413b-a802-aef59a06d3bc' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=60'
-    url10west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.12820610952269318&imageUrl=/images/seatResult/c83ad992-4b10-44ef-8744-e6212d78f638' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=41'
+    url10west = 'http://172.18.249.153:6080/seatSubscribeServer/seat/intoSeatPage.do?r=0.12820610952269318&imageUrl=/images/seatResult/c83ad992-4b10-44ef-8744-e6212d78f638' + date + '.png&seatAppointmentDate=' + date + '&seatAppointmentHall=61'
 
     urls = [url3east, url3west, url4east, url4west, url5east, url5mid, url5west, url6east, url6west, url7east,url7west, url8east, url8mid, url8west, url9east, url9mid, url9west, url10east, url10west]
     print("请选择预约书库: ")
